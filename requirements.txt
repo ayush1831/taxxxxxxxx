@@ -1,0 +1,36 @@
+# =============================
+# Tax Advisor Backend - Phase 3
+#
+# Setup & Usage Instructions:
+#
+# 1. Install dependencies:
+#    pip install -r requirements.txt
+#
+# 2. Set up your environment variables:
+#    cp app/.env.example app/.env
+#    # Edit app/.env with your Supabase credentials
+#
+# 3. Run the database migration (from project root or backend/):
+#    psql "$DB_HOST" -U "$DB_USER" -d "$DB_NAME" -f app/migrations/001_create_userfinancials.sql
+#
+# 4. Start the FastAPI server:
+#    uvicorn app.main:app --reload
+#
+# 5. Run tests:
+#    pytest
+#
+# 6. Phase 3: Tax calculation and regime comparison
+#    - Test /api/calculate-tax endpoint with reviewed data (see PRD for JSON structure)
+#    - Ensure PyPDF2 is installed for PDF parsing
+# =============================
+
+fastapi
+uvicorn
+psycopg2-binary
+python-dotenv
+pydantic
+pytest
+pytest-asyncio
+httpx
+requests
+PyPDF2 
